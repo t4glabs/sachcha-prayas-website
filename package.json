@@ -1,0 +1,23 @@
+{
+  "name": "tailwind-starter-template",
+  "version": "1.0.0",
+  "description": "Tailwind Starter Template",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "npx tailwindcss -i ./public/input.css -o ./output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/t4glabs/tailwind-starter-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/t4glabs/tailwind-starter-template/issues"
+  },
+  "homepage": "https://github.com/t4glabs/tailwind-starter-template#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
