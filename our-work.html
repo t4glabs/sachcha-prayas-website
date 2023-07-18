@@ -4,34 +4,28 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<meta name="description" content="	Nivethan Trust is a local non-profit from Madurai, dedicated to help those in need in the
-							fields of health, education and food." />
-
 	<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 	<link href="output.css" rel="stylesheet">
 
 	<title>Sachcha Prayas</title>
 	<link rel="icon" type="image/x-icon" href="public/img/Nivethan-icon.png" />
-
 </head>
 
 <body class="bg-stone-50 font-sans leading-normal tracking-normal font-serif">
 
 	<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
-	<div class="w-full text-gray-300 bg-white drop-shadow-md font-family-class header-background">
+	<div class="w-full text-gray-300 bg-white drop-shadow-md font-family-class">
 		<div x-data="{ open: false }"
-			class="p-2 flex flex-col md:items-center md:justify-between md:flex-row md:px-6 lg:px-8 ">
+			class="p-2 flex flex-col md:items-center md:justify-between md:flex-row md:px-6 lg:px-8 header-background">
 			<div class="flex flex-row items-center justify-between">
 
-				<a href="index.html"><img src="./logo/image 74.png" alt="logo" class="h-full w-20">
-				</a>
+				<a href="index.html"><img src="./logo/image 74.png" alt="logo" class="h-full w-20"></a>
 
 
-				<button aria-label="hamberger" id="hamberger-btn"
-					class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
-					<svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6 heading-text-color">
+				<button aria-label="hamberger-btn" class="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
+					@click="open = !open">
+					<svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6 text-sky-700">
 						<path x-show="!open" fill-rule="evenodd"
 							d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
 							clip-rule="evenodd"></path>
@@ -46,48 +40,18 @@
 			<nav :class="{'flex': open, 'hidden': !open}"
 				class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
 				<a class="px-4 py-2 mt-2 text-base font-semibold text-white rounded-lg  md:mt-0 hover:text-black hover:bg-gray-50 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-					href="#">Home</a>
-
+					href="index.html">Home</a>
 
 				<a class="px-4 py-2 mt-2 text-base font-semibold text-white rounded-lg  md:mt-0 hover:text-black hover:bg-gray-50 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
 					href="about.html">About Us</a>
-
 				<!-- ***** -->
-				<!-- <div @click.away="open = false" class="relative" x-data="{ open: false }">
-					<button @click="open = !open" aria-label="navbar-links"
-						class="text-white flex flex-row items-center w-full px-4 py-2 mt-2 text-base font-semibold text-left bg-transparent rounded-lg hover:text-black hover:bg-gray-50  md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
-						<span>Programs</span>
-						<svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
-							class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
-							<path fill-rule="evenodd"
-								d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-								clip-rule="evenodd"></path>
-						</svg>
-					</button>
-					<div x-show="open" x-transition:enter="transition ease-out duration-100"
-						x-transition:enter-start="transform opacity-0 scale-95"
-						x-transition:enter-end="transform opacity-100 scale-100"
-						x-transition:leave="transition ease-in duration-75"
-						x-transition:leave-start="transform opacity-100 scale-100"
-						x-transition:leave-end="transform opacity-0 scale-95"
-						class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
-						<div class="px-2 py-2 bg-white rounded-md shadow  text-white">
-							<a class="block px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg  hover:text-black   md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-								href="nurture-merit.html">Nurture Merit</a>
-							<a class="block px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg  hover:text-black   md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-								href="mission-thalassemia.html">Mission Thalassemia</a>
-							<a class="block px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg  hover:text-black   md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-								href="economic-development-initiatives.html">Economic Development Initiatives</a>
-						</div>
-					</div>
-				</div> -->
-
-				<!-- **** -->
 
 				<a class="text-white px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg hover:text-black hover:bg-gray-50     md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-					href="our-work.html">Our Work</a>
+					href="#">Our Work</a>
+
 				<a class="text-white px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg hover:text-black hover:bg-gray-50    md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
 					href="team.html">Team</a>
+
 				<a class="text-white px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg hover:text-black hover:bg-gray-50    md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
 					href="donate.html">Donate</a>
 
@@ -97,39 +61,20 @@
 	<!-- header end -->
 
 
-	<!-- Main body  -->
-	<section id="about">
+	<!-- body -->
 
-		<div class="px-6 py-12 bg-gray-50 text-gray-800 text-center lg:text-left">
-
-			<div class="container mx-auto xl:px-32">
-				<div class="grid lg:grid-cols-2 gap-6 flex items-center justify-center">
-					<div class="mb-12 lg:mb-0 sm:place-self-center">
-						<img src="public/img/logo2.webp" class="h-full w-full rounded-lg drop-shadow-2xl"
-							alt="logo 2 Img" />
-					</div>
-					<div class="mt-12 lg:mt-0">
-						<h1 class="lg:text-3xl text-lg font-semibold text-color capitalize lg:text-4xl p-2 text-center">
-							Demo
-						</h1>
-						<p
-							class="font-family-class max-w-2xl mb-6 font-light text-black font-thin md:text-lg lg:text-xl  lg:p-6 p-2">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus cupiditate nemo ratione
-							aperiam nesciunt labore nobis nam dolore sunt! Hic qui, nihil facilis sit quas consequuntur
-							aperiam consequatur officia beatae. </p>
-
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Main body end  -->
-
-
+	<div>
+		Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur fugit vitae quis ullam voluptates
+		corporis, voluptatum quo, nemo dignissimos adipisci rem eos commodi placeat neque, nesciunt earum quasi?
+		Excepturi, et?
+		Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, temporibus provident sint laborum reprehenderit
+		error illum ipsam minima deleniti labore delectus, quidem, veniam nihil cumque magnam eaque voluptas aut
+		sapiente.
+	</div>
 
 
 	<!-- footer  -->
+
 	<footer class="bg-gray-300 p-4" aria-labelledby="footer-heading">
 		<h2 id="footer-heading" class="sr-only">Footer</h2>
 		<div class="mx-auto max-w-7xl px-6 pb-4 sm:pt-24 lg:px-8 pt-2 lg:pt-12">
@@ -212,6 +157,7 @@
 			</div>
 		</div>
 	</footer>
+
 
 	<script src="index.js"></script>
 
