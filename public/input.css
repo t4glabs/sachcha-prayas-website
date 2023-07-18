@@ -3,5 +3,6 @@
 @tailwind utilities;
 
 .header-background {
-    background: green;
+    background: rgb(32,59,19);
+
 }
