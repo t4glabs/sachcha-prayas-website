@@ -2,87 +2,87 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    <link href="output.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+	<link href="output.css" rel="stylesheet">
 
-    <title>Sachcha Prayas</title>
-    <link rel="icon" type="image/x-icon" href="public/img/Nivethan-icon.png" />
+	<title>Sachcha Prayas</title>
+	<link rel="icon" type="image/x-icon" href="public/image/logo.png" />
 </head>
 
 <body class="bg-stone-50 font-sans leading-normal tracking-normal font-serif">
 
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
-    <div class="w-full text-gray-300 bg-white drop-shadow-md font-family-class">
-        <div x-data="{ open: false }"
-            class="p-2 flex flex-col md:items-center md:justify-between md:flex-row md:px-6 lg:px-8 header-background">
-            <div class="flex flex-row items-center justify-between">
+	<div class="w-full text-gray-300 bg-white drop-shadow-md font-family-class">
+		<div x-data="{ open: false }"
+			class="p-2 flex flex-col md:items-center md:justify-between md:flex-row md:px-6 lg:px-8 header-background">
+			<div class="flex flex-row items-center justify-between">
 
-                <a href="index.html"><img src="./logo/image 74.png" alt="logo" class="h-full w-20"></a>
-
-
-                <button aria-label="hamberger-btn" class="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
-                    @click="open = !open">
-                    <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6 text-sky-700">
-                        <path x-show="!open" fill-rule="evenodd"
-                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-                            clip-rule="evenodd"></path>
-                        <path x-show="open" fill-rule="evenodd"
-                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </button>
-            </div>
+				<a href="index.html"><img src="public/image/logo.png" alt="logo" class="h-full w-20"></a>
 
 
-            <nav :class="{'flex': open, 'hidden': !open}"
-                class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
-                <a class="px-4 py-2 mt-2 text-base font-semibold text-white rounded-lg  md:mt-0 hover:text-black hover:bg-gray-50 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                    href="index.html">Home</a>
+				<button aria-label="hamberger-btn" class="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
+					@click="open = !open">
+					<svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6 text-sky-700">
+						<path x-show="!open" fill-rule="evenodd"
+							d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+							clip-rule="evenodd"></path>
+						<path x-show="open" fill-rule="evenodd"
+							d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+							clip-rule="evenodd"></path>
+					</svg>
+				</button>
+			</div>
 
-                <a class="px-4 py-2 mt-2 text-base font-semibold text-white rounded-lg  md:mt-0 hover:text-black hover:bg-gray-50 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                    href="about.html">About Us</a>
 
-                <!-- **** -->
-                <a class="text-white px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg hover:text-black hover:bg-gray-50     md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                    href="our-work.html">Our Work</a>
-                <a class="text-white px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg hover:text-black hover:bg-gray-50    md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                    href="#">Team</a>
-                <a class="text-white px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg hover:text-black hover:bg-gray-50    md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                    href="donate.html">Donate</a>
+			<nav :class="{'flex': open, 'hidden': !open}"
+				class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+				<a class="px-4 py-2 mt-2 text-base font-semibold text-white rounded-lg  md:mt-0 hover:text-black hover:bg-gray-50 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+					href="index.html">Home</a>
 
-            </nav>
-        </div>
-    </div>
-    <!-- **** Header section end *** -->
+				<a class="px-4 py-2 mt-2 text-base font-semibold text-white rounded-lg  md:mt-0 hover:text-black hover:bg-gray-50 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+					href="about.html">About Us</a>
 
-<!-- body -->
-<div>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur fugit vitae quis ullam voluptates
-    corporis, voluptatum quo, nemo dignissimos adipisci rem eos commodi placeat neque, nesciunt earum quasi?
-    Excepturi, et?
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, temporibus provident sint laborum reprehenderit
-    error illum ipsam minima deleniti labore delectus, quidem, veniam nihil cumque magnam eaque voluptas aut
-    sapiente.
-</div>
+				<!-- **** -->
+				<a class="text-white px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg hover:text-black hover:bg-gray-50     md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+					href="our-work.html">Our Work</a>
+				<a class="text-white px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg hover:text-black hover:bg-gray-50    md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+					href="#">Team</a>
+				<a class="text-white px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg hover:text-black hover:bg-gray-50    md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+					href="donate.html">Donate</a>
 
-    <!-- footer  -->
+			</nav>
+		</div>
+	</div>
+	<!-- **** Header section end *** -->
 
-    <footer class="bg-gray-300 p-4" aria-labelledby="footer-heading">
-		<h2 id="footer-heading" class="sr-only">Footer</h2>
-		<div class="mx-auto max-w-7xl px-6 pb-4 sm:pt-24 lg:px-8 pt-2 lg:pt-12">
+	<!-- body -->
+	<div>
+		Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur fugit vitae quis ullam voluptates
+		corporis, voluptatum quo, nemo dignissimos adipisci rem eos commodi placeat neque, nesciunt earum quasi?
+		Excepturi, et?
+		Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, temporibus provident sint laborum reprehenderit
+		error illum ipsam minima deleniti labore delectus, quidem, veniam nihil cumque magnam eaque voluptas aut
+		sapiente.
+	</div>
+
+	<!-- footer  -->
+
+
+	<!-- footer  -->
+	<footer class="header-background p-4 text-white" aria-labelledby="footer-heading">
+		<!-- <h2 id="footer-heading" class="sr-only">Footer</h2> -->
+		<div class="mx-auto max-w-7xl px-6 pb-4 sm:pt-24 lg:px-8 pt-2 lg:pt-12 text-white">
 			<div class="">
-				<div class="flex flex-col lg:flex-row justify-center lg:gap-20">
+				<div class="flex flex-col lg:flex-row justify-between lg:gap-20 gap-12">
 
 					<!-- 1111 -->
 					<div class="mt-2 xl:mt-0 max-w-xl">
-						<h3 class="text-lg font-semibold leading-6 text-color">Donate Now to Sachcha Prayas</h3>
-						<p class="mt-2 text-baseleading-6 text-black font-family-class">Lorem ipsum dolor sit, amet
-							consectetur adipisicing elit. Aperiam itaque dignissimos aliquid eaque modi error
-							accusantium tenetur dolor accusamus. Doloremque officiis expedita porro incidunt libero
-							dolores quis omnis nobis iusto.
+						<h3 class="text-lg font-semibold leading-6 text-white">Donate Now to Sachcha Prayas</h3>
+						<p class="mt-2 text-baseleading-6 text-white font-family-class">Near to Police Chauki Bus Stand,
+							Gram Panchayat Harduli Bargi Nagar, district Jabalpur, Pin code – 482056
 
 							<a href="donate.html" class="text-orange-600 hover:text-sky-600 hover:underline">Donate
 								online.</a>
@@ -91,22 +91,21 @@
 					</div>
 
 					<!-- 22222 -->
-					<div class="mt-2 xl:mt-0">
-						<h3 class="text-lg font-semibold leading-6 text-color">Contact Us</h3>
-						<p class="mt-2 text-baseleading-6 text-black font-family-class"> Demo</p>
-						<p class="mt-2 text-baseleading-6 text-black font-family-class">Madhya Pradesh</p>
-						<p class="mt-2 text-baseleading-6 text-black font-family-class"> 653627282</p>
-						<p class="mt-2 text-baseleading-6 text-black font-family-class">@gmail.com</p>
+					<div class="mt-2 xl:mt-0 text-white">
+						<h3 class="text-lg font-semibold leading-6 ">Contact Us</h3>
+						<p class="mt-2 text-baseleading-6 font-family-class"> +91-9424708153,6263797445</p>
+						<p class="mt-2 text-baseleading-6 font-family-class">prayasjbp23@yahoo.in</p>
+						<p class="mt-2 text-baseleading-6 font-family-class"> khanparwez590@gmail.com</p>
+						<!-- <p class="mt-2 text-baseleading-6 font-family-class">@gmail.com</p> -->
 
 					</div>
 				</div>
-
-
 			</div>
-			<div
-				class="mt-16 border-t border-black/20 pt-8 sm:mt-20 md:flex md:items-center md:justify-between lg:mt-8">
+
+
+			<div class="mt-16 border-t border-white pt-8 sm:mt-20 md:flex md:items-center md:justify-between lg:mt-8">
 				<div class="flex space-x-6 md:order-2">
-					<a href=" " class="text-gray-900 hover:text-sky-600">
+					<a href=" " class="text-white hover:text-sky-600">
 						<span class="sr-only">Facebook</span>
 						<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
 							<path fill-rule="evenodd"
@@ -115,7 +114,7 @@
 						</svg>
 					</a>
 
-					<a href=" " class="text-gray-900 hover:text-sky-600">
+					<a href=" " class="text-white hover:text-sky-600">
 						<span class="sr-only">Twitter</span>
 						<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
 							<path
@@ -123,7 +122,7 @@
 						</svg>
 					</a>
 
-					<a href="" class="text-gray-900 hover:text-sky-600">
+					<a href="" class="text-white hover:text-sky-600">
 						<span class="sr-only">YouTube</span>
 						<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
 							<path fill-rule="evenodd"
@@ -133,12 +132,12 @@
 					</a>
 				</div>
 				<div>
-					<p class="mt-8 mb-2 text-base leading-5 text-black md:order-1 md:mt-0 font-family-class">&copy;
+					<p class="mt-8 mb-2 text-base leading-5 text-white md:order-1 md:mt-0 font-family-class">&copy;
 						Copyright
-					Sachcha Prayas
+						Sachcha Prayas
 						- All rights reserved.</p>
 
-					<p class="mt-12 text-sm leading-5  md:order-1 md:mt-0 text-black font-family-class">
+					<p class="mt-12 text-sm leading-5  md:order-1 md:mt-0 text-white font-family-class">
 						built with 💙 by <a
 							href="https://t4glabs.discourse.group/u?cards=no&group=Tech4Good-Fellows&order=likes_received&period=all"
 							target="_blank" class="li-text-color  hover:text-orange-600 hover:underline">Tech4Good
@@ -153,8 +152,7 @@
 		</div>
 	</footer>
 
-
-    <script src="index.js"></script>
+	<script src="index.js"></script>
 
 </body>
 
