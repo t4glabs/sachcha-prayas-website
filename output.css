@@ -1181,7 +1181,16 @@ video {
 }
 
 .header-background {
-  background: rgb(32,59,19);
+  background: rgb(32, 59, 19);
+}
+
+.donate-color {
+  color: rgba(235, 105, 92, 1);
+}
+
+.li-text-color:hover {
+  color: rgba(235, 105, 92, 1);
+  text-decoration: underline;
 }
 
 .hover\:bg-gray-200:hover {
