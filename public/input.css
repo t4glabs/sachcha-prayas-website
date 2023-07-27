@@ -19,3 +19,7 @@
 .donate {
     background-color: rgb(234, 52, 35);
 }
+
+.border-color {
+    border: 1px solid rgb(32, 59, 19);
+}
