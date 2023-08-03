@@ -740,6 +740,34 @@ video {
   height: 100%;
 }
 
+.h-48 {
+  height: 12rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-80 {
+  height: 20rem;
+}
+
+.h-1 {
+  height: 0.25rem;
+}
+
+.h-11 {
+  height: 2.75rem;
+}
+
+.h-112 {
+  height: 28rem;
+}
+
+.h-104 {
+  height: 26rem;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -774,6 +802,34 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.w-1\/12 {
+  width: 8.333333%;
+}
+
+.w-9\/12 {
+  width: 75%;
+}
+
+.w-5\/12 {
+  width: 41.666667%;
+}
+
+.w-6\/12 {
+  width: 50%;
+}
+
+.w-3\/6 {
+  width: 50%;
+}
+
+.w-3 {
+  width: 0.75rem;
 }
 
 .max-w-2xl {
@@ -870,6 +926,22 @@ video {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-24 {
+  gap: 6rem;
+}
+
+.gap-20 {
+  gap: 5rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .gap-x-6 {
@@ -993,6 +1065,11 @@ video {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.object-fill {
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .object-center {
@@ -1634,6 +1711,11 @@ video {
     margin-right: 0px;
   }
 
+  .lg\:my-5 {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
   .lg\:mb-0 {
     margin-bottom: 0px;
   }
@@ -1652,6 +1734,10 @@ video {
 
   .lg\:w-6\/12 {
     width: 50%;
+  }
+
+  .lg\:w-6 {
+    width: 1.5rem;
   }
 
   .lg\:max-w-7xl {
