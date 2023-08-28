@@ -4,7 +4,15 @@
 
 .header-background {
     background: rgb(32, 59, 19);
+}
 
+.border-back-color {
+    /* border-color: rgb(32, 59, 19); */
+    border-color: rgb(234, 52, 35);
+}
+
+.nav-link-color {
+    color: black;
 }
 
 .donate-color {
