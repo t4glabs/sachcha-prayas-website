@@ -20,12 +20,12 @@
 
 	<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
-	<div class="w-full text-gray-300  font-family-class fixed top-0 left-0  bg-white ">
+	<div class="w-full text-gray-300  font-family-class  top-0 left-0  bg-white ">
 		<div x-data="{ open: false }"
 			class="p-2 flex flex-col  md:items-center md:justify-between md:flex-row md:px-6 lg:px-8 ">
 			<div class="flex flex-row items-center justify-between">
 
-				<a href="index.html"><img src="public/image/logo.png" alt="logo" class="h-full w-20"></a>
+				<a href="index.html"><img src="public/image/logo.png" alt="logo" class="h-full w-16"></a>
 
 
 				<button aria-label="hamberger-btn" class="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
@@ -57,11 +57,11 @@
 				<a class=" px-4 py-2 mt-2 nav-link-color text-lg  bg-transparent rounded-lg hover:text-red-600 hover:bg-gray-50    md:mt-0 md:ml-4  focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
 					href="team.html">Team</a>
 
-					<a class=" px-4 py-2 mt-2 nav-link-color text-lg  bg-transparent rounded-lg hover:text-red-600 hover:bg-gray-50    md:mt-0 md:ml-4  focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                    href="new-gallery.html">Gallery</a>
+				<a class=" px-4 py-2 mt-2 nav-link-color text-lg  bg-transparent rounded-lg hover:text-red-600 hover:bg-gray-50    md:mt-0 md:ml-4  focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+					href="new-gallery.html">Gallery</a>
 
-                <a class=" px-4 py-2 mt-2 nav-link-color text-lg  bg-transparent rounded-lg hover:text-red-600 hover:bg-gray-50    md:mt-0 md:ml-4  focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                    href="contact.html">Contact Us</a>
+				<a class=" px-4 py-2 mt-2 nav-link-color text-lg  bg-transparent rounded-lg hover:text-red-600 hover:bg-gray-50    md:mt-0 md:ml-4  focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+					href="contact.html">Contact Us</a>
 
 				<a class=" px-4 py-2 mt-2  text-lg  bg-transparent rounded-lg text-red-600 bg-gray-100    md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900  focus:bg-gray-200 focus:outline-none focus:shadow-outline "
 					href="donate.html">Donate</a>
@@ -75,43 +75,35 @@
 	<!-- header end -->
 
 
-	<!-- hero image -->
-	<!-- <section>
-		<div class="w-full ">
-			<img class="w-full" src="public/image/gallery/image 107 (1).png" alt="">
-		</div>
-	</section> -->
-
 	<!-- carousel -->
-	<section class="lg:px-24 lg:py-8 py-4 flex flex-col justify-center  ">
+	<!-- <section class="lg:px-24 lg:py-8 py-4 flex flex-col justify-center  ">
 		<div class="flex items-center justify-center  container mx-auto lg:my-12 p-2 mt-12 ">
 			<div x-data="{ activeSlide: 0 }" class=" overflow-hidden w-full  lg:mx-14 mx-6">
-				<!-- slides -->
 				<div class="carousel mt-12 ">
 
-					<!-- slide-1 -->
+
 					<div x-show="activeSlide === 0" class="carousel-item border border-gray-800 rounded-md ">
 						<img class="w-full rounded-md" src="public/image/gallery/carousel1.png" alt="Image 1">
 					</div>
 
-					<!-- slide-2 -->
+
 					<div x-show="activeSlide === 1" class="carousel-item border border-gray-800  rounded-md">
 						<img class="w-full rounded-md" src="public/image/gallery/carousel2.png" alt="Image 2">
 					</div>
 
-					<!-- slide-3 -->
+
 					<div x-show="activeSlide === 2" class="carousel-item border border-gray-800  rounded-md">
 						<img class="w-full rounded-md" src="public/image/gallery/carousel3.png" alt="Image 3">
 					</div>
 
-					<!-- slide-4 -->
+
 					<div x-show="activeSlide === 3" class="carousel-item border border-gray-800 rounded-md ">
 						<img class="w-full rounded-md" src="public/image/gallery/carousel4.png" alt="Image 4">
 					</div>
 
 				</div>
 
-				<!-- controllers -->
+
 				<div class="carousel-controls flex justify-center">
 					<button @click="activeSlide = (activeSlide - 1 + 4) % 4"
 						class="carousel-control-prev w-20 h-10 ml-2 md:ml-10  cursor-pointer text-3xl font-bold text-black hover:text-white hover:text-green-600 rounded-lg  mt-4 bg-green-600  leading-tight text-center inset-y-0 left-0 my-auto controller">
@@ -124,16 +116,16 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<!-- end -->
 
 
 
 	<!-- Main body  -->
 	<section>
-		<div class="lg:px-6 px-4 lg:py-12 py-4 bg-gray-50 text-gray-800  lg:text-left container mx-auto mt-4 lg:mt-0">
+		<div class="container mx-auto lg:px-6 px-4 lg:py-12 py-4 bg-gray-50 text-gray-800  lg:text-left  mt-4 lg:mt-0">
 
-			<p class="text-justify text-lg mb-6 ">
+			<p class="mx-auto text-justify text-lg mb-6 ">
 				Sachcha Prayas is committed to creating a society where every citizen, especially women and children,
 				can lead a life of dignity and equality. Their mission encompasses various initiatives to promote income
 				generation activities, environmental security, health and hygiene practices, legal awareness, and child
@@ -145,60 +137,124 @@
 	</section>
 
 	<div class="container mx-auto">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-		<div class="group relative">
-			<div class="invisible group-hover:visible absolute inset-0 bg-blue-500 text-white flex justify-center items-center transition-all duration-300">hi there</div>
-		
-		
-                <img class="w-full" src="public/image/gallery/carousel1.png" alt="THEMES OF INTEREST" loading="lazy">
-				
-               
-        </div>
-		<div class="group relative">
-			<div class="invisible group-hover:visible absolute inset-0 bg-blue-500 text-white flex justify-center items-center transition-all duration-300">hi there</div>
-		
-		
-                <img class="w-full" src="public/image/gallery/carousel2.png" alt="THEMES OF INTEREST" loading="lazy">
-				
-               
-        </div>
-		<div class="group relative">
-			<div class="invisible group-hover:visible absolute inset-0 bg-blue-500 text-white flex justify-center items-center transition-all duration-300">hi there</div>
-		
-		
-                <img class="w-full" src="public/image/gallery/carousel3.png" alt="THEMES OF INTEREST" loading="lazy">
-				
-               
-        </div>
-		<div class="group relative">
-			<div class="invisible group-hover:visible absolute inset-0 bg-blue-500 text-white flex justify-center items-center transition-all duration-300">hi there</div>
-		
-		
-                <img class="w-full" src="public/image/gallery/carousel4.png" alt="THEMES OF INTEREST" loading="lazy">
-				
-               
-        </div>
-	<div class="group relative">
-		<div class="invisible group-hover:visible absolute inset-0 bg-blue-500 text-white flex justify-center items-center transition-all duration-300">hi there</div>
-	
-	
-			<img class="w-full" src="public/image/gallery/carousel1.png" alt="THEMES OF INTEREST" loading="lazy">
-			
-		   
-	</div>
-	<div class="group relative">
-		<div class="invisible group-hover:visible absolute inset-0 bg-blue-500 text-white flex justify-center items-center transition-all duration-300">hi there</div>
-	
-	
-			<img class="w-full" src="public/image/gallery/carousel2.png" alt="THEMES OF INTEREST" loading="lazy">
-			
-		   
-	</div>
-    </div>
-</div>
+		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+			<div class="group relative">
+				<div
+					class="invisible group-hover:visible absolute inset-0 bg-blue-500 text-white flex justify-center items-center transition-all duration-300">
+					hi there</div>
 
+
+				<img class="w-full" src="public/image/gallery/carousel1.png" alt="THEMES OF INTEREST" loading="lazy">
+
+
+			</div>
+			<div class="group relative">
+				<div
+					class="invisible group-hover:visible absolute inset-0 bg-blue-500 text-white flex justify-center items-center transition-all duration-300">
+					hi there</div>
+
+
+				<img class="w-full" src="public/image/gallery/carousel2.png" alt="THEMES OF INTEREST" loading="lazy">
+
+
+			</div>
+			<div class="group relative">
+				<div
+					class="invisible group-hover:visible absolute inset-0 bg-blue-500 text-white flex justify-center items-center transition-all duration-300">
+					hi there</div>
+
+
+				<img class="w-full" src="public/image/gallery/carousel3.png" alt="THEMES OF INTEREST" loading="lazy">
+
+
+			</div>
+			<div class="group relative">
+				<div
+					class="invisible group-hover:visible absolute inset-0 bg-blue-500 text-white flex justify-center items-center transition-all duration-300">
+					hi there</div>
+
+
+				<img class="w-full" src="public/image/gallery/carousel4.png" alt="THEMES OF INTEREST" loading="lazy">
+
+
+			</div>
+			<div class="group relative">
+				<div
+					class="invisible group-hover:visible absolute inset-0 bg-blue-500 text-white flex justify-center items-center transition-all duration-300">
+					hi there</div>
+
+
+				<img class="w-full" src="public/image/gallery/carousel1.png" alt="THEMES OF INTEREST" loading="lazy">
+
+
+			</div>
+			<div class="group relative">
+				<div
+					class="invisible group-hover:visible absolute inset-0 bg-blue-500 text-white flex justify-center items-center transition-all duration-300">
+					hi there</div>
+
+
+				<img class="w-full" src="public/image/gallery/carousel2.png" alt="THEMES OF INTEREST" loading="lazy">
+
+
+			</div>
+		</div>
+	</div>
 	<!-- Main body end  -->
 
+	<!-- mission vision section   -->
+	<section>
+		<div class=" container max-w-8xl  lg:px-6 px-4 py-12">
+
+			<dl class="grid  grid-cols-1 gap-x-8 gap-y-10  md:grid-cols-2 lg:grid-cols-3">
+				<!-- Mission -->
+				<div class=" p-4  xl:p-8 bg-gray-200 rounded-lg shadow-xl">
+					<img class="mx-auto w-20 flex items-center justify-center " src="public/image/icon/mission.png"
+						alt="">
+					<dt class="font-semibold leading-7">
+						<p class="p-2 text-3xl font-bold tracking-tight  sm:text-2xl  text-gray-900 text-center">Mission
+						</p>
+					</dt>
+					<dd class="mt-2 text-justify leading-7 text-gray-700 ">To empower the marginalised section of
+						society especially women and children and ensure their reach to access knowledge and information
+						which helps to lead a dignified life.</dd>
+				</div>
+
+				<!-- vision -->
+				<div class=" p-4  xl:p-8 bg-gray-200 rounded-lg shadow-xl">
+					<img class="mx-auto w-20 flex items-center justify-center " src="public/image/icon/vision.png"
+						alt="">
+
+					<dt class=" font-semibold leading-7 ">
+						<p class="p-2 text-3xl font-bold tracking-tight  sm:text-2xl  text-gray-900 text-center">Vision
+						</p>
+					</dt>
+					<dd class="mt-2 text-justify leading-7 text-gray-700 ">To create a society where every citizen,
+						especially women and children, lives with dignity and has equal access to services related to
+						health, education, and other basic needs services.
+					</dd>
+				</div>
+
+				<!-- Objective -->
+				<div class=" p-4  xl:p-8 bg-gray-200 rounded-lg shadow-xl">
+					<img class="mx-auto w-20 flex items-center justify-center " src="public/image/icon/goal.png"
+						alt="">
+
+					<dt class=" font-semibold leading-7 ">
+						<p class="p-2 text-3xl font-bold tracking-tight  sm:text-2xl  text-gray-900 text-center">
+							Objective
+						</p>
+					</dt>
+					<dd class="mt-2 text-justify leading-7 text-gray-700 ">
+						This project aims to empower women and girls by promoting income generation skills, raising
+						awareness, and improving access to rights. It also focuses on environmental security, health,
+						and legal awareness to build a sustainable and empowered community.</dd>
+				</div>
+
+			</dl>
+		</div>
+	</section>
+	<!--mission end  -->
 
 	<!-- donate button -->
 	<section>
