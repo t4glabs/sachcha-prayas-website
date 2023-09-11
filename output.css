@@ -708,6 +708,10 @@ video {
   display: block;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .flex {
   display: flex;
 }
@@ -726,10 +730,6 @@ video {
 
 .aspect-\[2\/2\] {
   aspect-ratio: 2/2;
-}
-
-.aspect-\[3\/2\] {
-  aspect-ratio: 3/2;
 }
 
 .h-10 {
@@ -1111,6 +1111,10 @@ video {
 
 .text-justify {
   text-align: justify;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .font-sans {

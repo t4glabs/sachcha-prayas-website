@@ -9,6 +9,42 @@
 
     <title>Sachcha Prayas</title>
     <link rel="icon" type="image/x-icon" href="../public/image/logo.png" />
+    <style>
+        .goog-te-banner-frame{
+            display:none !important;
+        }
+        
+        #google_translate_element select{
+            background-color:#ffffff;
+            color:  rgb(220 38 38);
+            border: none;
+            width: 115px;
+            overflow: hidden;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding:6px 8px
+        }
+        .goog-logo-link{
+            display:none !important;
+        }
+        .goog-te-gadget{
+            color:transparent!important;
+        }
+        .VIpgJd-ZVi9od-l4eHX-hSRGPd{
+            display:none !important;
+        }
+        .goog-te-combo{
+            width: 202px;
+            overflow: hidden;
+            border: 1px solid #009e4d;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #f7f7f7;
+            color: #13b95a;
+            cursor: pointer;
+            appearance: none;
+        }
+        </style>
 </head>
 
 <body class="bg-white font-sans leading-normal tracking-normal ">
@@ -58,6 +94,7 @@
 
                 <a class=" px-4 py-2 mt-2  text-lg  bg-transparent rounded-lg text-red-600 bg-gray-100    md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900  focus:bg-gray-200 focus:outline-none focus:shadow-outline "
                     href="../donate.html">Donate</a>
+                <div id="google_translate_element"></div>
             </nav>
         </div>
 
@@ -230,7 +267,13 @@
 
 
 
-    <script src="index.js"></script>
+   <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+    </script>
+    
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 
