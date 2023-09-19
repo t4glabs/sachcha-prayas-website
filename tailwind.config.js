@@ -11,6 +11,9 @@ module.exports = {
         '120': '30rem',
 
       },
+      height:{
+        '90': '21rem'
+      },
 
       backgroundColor: {
         'custom-green': 'green-600',
