@@ -608,17 +608,6 @@ video {
   top: 0px;
 }
 
-<<<<<<< HEAD
-=======
-.m-3 {
-  margin: 0.75rem;
-}
-
-.m-3\.5 {
-  margin: 0.875rem;
-}
-
->>>>>>> origin/main
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -736,8 +725,8 @@ video {
   height: 26rem;
 }
 
-.h-20 {
-  height: 5rem;
+.h-16 {
+  height: 4rem;
 }
 
 .h-20 {
@@ -792,19 +781,12 @@ video {
   width: 80%;
 }
 
-.w-40 {
-  width: 10rem;
-<<<<<<< HEAD
-=======
-}
-
 .w-5 {
   width: 1.25rem;
->>>>>>> origin/main
 }
 
-.w-5 {
-  width: 1.25rem;
+.w-56 {
+  width: 14rem;
 }
 
 .w-6 {
@@ -820,16 +802,16 @@ video {
   width: max-content;
 }
 
+.w-40 {
+  width: 10rem;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
 
 .max-w-4xl {
   max-width: 56rem;
-}
-
-.max-w-6xl {
-  max-width: 72rem;
 }
 
 .max-w-7xl {
@@ -842,6 +824,10 @@ video {
 
 .max-w-xl {
   max-width: 36rem;
+}
+
+.max-w-6xl {
+  max-width: 72rem;
 }
 
 .flex-grow {
@@ -901,17 +887,9 @@ video {
   gap: 2rem;
 }
 
-<<<<<<< HEAD
 .gap-x-24 {
   -moz-column-gap: 6rem;
        column-gap: 6rem;
-}
-
-=======
->>>>>>> origin/main
-.gap-x-4 {
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
 }
 
 .gap-x-6 {
@@ -942,6 +920,11 @@ video {
 
 .gap-y-6 {
   row-gap: 1.5rem;
+}
+
+.gap-x-4 {
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
 }
 
 .space-x-6 > :not([hidden]) ~ :not([hidden]) {
@@ -1001,7 +984,6 @@ video {
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
-<<<<<<< HEAD
 .border-orange-400 {
   --tw-border-opacity: 1;
   border-color: rgb(251 146 60 / var(--tw-border-opacity));
@@ -1015,16 +997,6 @@ video {
 .border-emerald-900 {
   --tw-border-opacity: 1;
   border-color: rgb(6 78 59 / var(--tw-border-opacity));
-=======
-.border-green-700 {
-  --tw-border-opacity: 1;
-  border-color: rgb(21 128 61 / var(--tw-border-opacity));
-}
-
-.border-orange-400 {
-  --tw-border-opacity: 1;
-  border-color: rgb(251 146 60 / var(--tw-border-opacity));
->>>>>>> origin/main
 }
 
 .bg-blue-500 {
@@ -1052,7 +1024,6 @@ video {
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
-<<<<<<< HEAD
 .bg-gray-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
@@ -1063,8 +1034,6 @@ video {
   background-color: rgb(153 27 27 / var(--tw-bg-opacity));
 }
 
-=======
->>>>>>> origin/main
 .bg-stone-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(250 250 249 / var(--tw-bg-opacity));
